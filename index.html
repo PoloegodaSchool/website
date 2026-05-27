@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Polegoda Maha Vidyalaya</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Cinzel:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ================= PRELOADER ================= -->
+
+    <div id="preloader">
+      <div class="loader-content">
+        <img src="assets/Scl logo wp-01.png" alt="School Logo" />
+
+        <h2>අධ්‍යාපනයෙන් විනය ඇති කරයි</h2>
+        <!-- <p>අධ්‍යාපනයෙන් විනය ඇති කරයි</p> -->
+      </div>
+    </div>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="header" id="header">
+      <div class="container nav-container">
+        <div class="logo">
+          <img src="assets/logo.svg" alt="School Logo" />
+          <div>
+            <h2>Polegoda MV</h2>
+            <span>Since 1926</span>
+          </div>
+        </div>
+
+        <nav class="nav" id="navMenu">
+          <a href="#hero" data-key="home">Home</a>
+          <a href="#about" data-key="about">About</a>
+          <a href="#history" data-key="history">History</a>
+          <a href="#achievements" data-key="achievements">Achievements</a>
+          <a href="#events" data-key="events">Events</a>
+          <a href="#gallery" data-key="gallery">Gallery</a>
+          <a href="#contact" data-key="contact">Contact</a>
+        </nav>
+
+        <select id="languageSwitcher" class="language-switcher">
+          <option value="en">English</option>
+          <option value="si">සිංහල</option>
+          <option value="ta">தமிழ்</option>
+        </select>
+
+        <div class="menu-btn" id="menuBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="hero">
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <p class="hero-top" data-key="welcome">WELCOME TO</p>
+
+        <h1 data-key="heroTitle">Polegoda Maha Vidyalaya</h1>
+
+        <p class="hero-subtitle" data-key="heroSubtitle">
+          A Century of Excellence, Leadership & Knowledge
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#about" class="btn btn-primary" data-key="exploreBtn">Explore School</a>
+          <a href="#contact" class="btn btn-outline" data-key="contactBtn">Contact Us</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-card glass">
+            <h2>100+</h2>
+            <p data-key="yearsLegacy">Years Legacy</p>
+          </div>
+
+          <div class="stat-card glass">
+            <h2>2500+</h2>
+            <p data-key="students">Students</p>
+          </div>
+
+          <div class="stat-card glass">
+            <h2>150+</h2>
+            <p data-key="teachers">Teachers</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="scroll-down">
+        <i class="fa-solid fa-chevron-down"></i>
+      </div> -->
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="section about" id="about">
+      <div class="container about-grid">
+        <div class="about-image reveal-left">
+          <img
+            class="old-building"
+            src="assets/old-building.svg"
+            alt="School Old Building"
+          />
+          <img
+            class="new-building"
+            src="assets/new-building.svg"
+            alt="School New Building"
+          />
+        </div>
+
+        <div class="about-content reveal-right">
+          <span class="section-tag" data-key="aboutTag">About Our School</span>
+
+          <h2 class="section-title" data-key="aboutTitle">Building Future Leaders Since 1926</h2>
+
+          <p data-key="school-mission">
+            Polegoda Maha Vidyalaya has proudly served generations of students
+            with dedication, discipline, and academic excellence. Our mission is
+            to nurture students with knowledge, creativity, leadership, and
+            strong moral values.
+          </p>
+
+          <p data-key="school-facilities">
+            With modern education facilities, experienced teachers, and a
+            vibrant student community, we continue to shape future leaders
+            prepared for the modern world.
+          </p>
+
+          <div class="about-features">
+            <div class="feature-card glass">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <h4 data-key="quality-education">Quality Education</h4>
+            </div>
+
+            <div class="feature-card glass">
+              <i class="fa-solid fa-medal"></i>
+              <h4 data-key="achievements">Achievements</h4>
+            </div>
+
+            <div class="feature-card glass">
+              <i class="fa-solid fa-users"></i>
+              <h4 data-key="strong-community">Strong Community</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PRINCIPAL ================= -->
+
+    <section class="section principal-section">
+      <div class="container principal-grid">
+        <div class="principal-content reveal-left">
+          <span class="section-tag" data-key="principalTag">Principal Message</span>
+
+          <h2 class="section-title" data-key="principalTitle">Message from the Principal</h2>
+
+          <p data-key="principal-message-content">
+            We are committed to creating a learning environment where every
+            student can discover their talents, build confidence, and achieve
+            academic excellence.
+          </p>
+
+          <p data-key="principal-message-content-2">
+            Our school continues to inspire generations through discipline,
+            innovation, leadership, and values that prepare students for a
+            successful future.
+          </p>
+
+          <h4 class="principal-name" data-key="principal-name">Mrs. W.D. Duleeka M. Premathilaka</h4>
+        </div>
+
+        <div class="principal-image reveal-right">
+          <img src="assets/principal.svg" alt="Principal" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HISTORY ================= -->
+
+    <section class="section history" id="history">
+      <div class="container">
+        <div class="section-heading-center reveal-up">
+          <span class="section-tag" data-key="historyTag">Our History</span>
+          <h2 class="section-title" data-key="historyTitle">A Proud Journey Through Time</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal-up">
+            <div class="timeline-year">1926</div>
+            <div class="timeline-content glass">
+              <h3 data-key="school-founded">School Founded</h3>
+              <p data-key="history-1926">
+                Polegoda Maha Vidyalaya was established with a vision of
+                providing quality education for the local community.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal-up">
+            <div class="timeline-year">1975</div>
+            <div class="timeline-content glass">
+              <h3 data-key="expansion-era">Expansion Era</h3>
+              <p data-key="history-1975">
+                New buildings, laboratories, and extracurricular activities were
+                introduced.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal-up">
+            <div class="timeline-year">2005</div>
+            <div class="timeline-content glass">
+              <h3 data-key="technology-integration">Technology Integration</h3>
+              <p data-key="history-2005">
+                Computer education and modern digital learning facilities were
+                introduced.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal-up">
+            <div class="timeline-year">2026</div>
+            <div class="timeline-content glass">
+              <h3 data-key="centenary-celebration">Centenary Celebration</h3>
+              <p data-key="history-2026">
+                Celebrating 100 years of educational excellence and inspiring
+                generations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ACHIEVEMENTS ================= -->
+
+    <section class="section achievements" id="achievements">
+      <div class="container">
+        <div class="section-heading-center reveal-up">
+          <span class="section-tag" data-key="achievementTag">Achievements</span>
+          <h2 class="section-title" data-key="achievementTitle">Our Success Stories</h2>
+        </div>
+
+        <div class="achievement-grid">
+          <div class="achievement-card glass reveal-up">
+            <i class="fa-solid fa-trophy"></i>
+            <h3 data-key="academic-excellence">Academic Excellence</h3>
+            <p data-key="achievement-1">Outstanding A/L and O/L examination results every year.</p>
+          </div>
+
+          <div class="achievement-card glass reveal-up">
+            <i class="fa-solid fa-futbol"></i>
+            <h3 data-key="sports-victories">Sports Victories</h3>
+            <p data-key="achievement-2">Championship wins in cricket, volleyball, and athletics.</p>
+          </div>
+
+          <div class="achievement-card glass reveal-up">
+            <i class="fa-solid fa-music"></i>
+            <h3 data-key="arts-culture">Arts & Culture</h3>
+            <p data-key="achievement-3">
+              National recognition in music, drama, and dancing competitions.
+            </p>
+          </div>
+
+          <div class="achievement-card glass reveal-up">
+            <i class="fa-solid fa-microchip"></i>
+            <h3 data-key="innovation">Innovation</h3>
+            <p data-key="achievement-4">Students leading technology and science exhibitions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EVENTS ================= -->
+
+    <section class="section events" id="events">
+      <div class="container">
+        <div class="section-heading-center reveal-up">
+          <span class="section-tag" data-key="eventTag">Upcoming Events</span>
+          <h2 class="section-title" data-key="eventTitle">Latest School Events</h2>
+        </div>
+
+        <div class="event-grid">
+          <div class="event-card reveal-up">
+            <img src="assets/news1.jpg" alt="Event" />
+            <div class="event-content">
+              <span>June 2026</span>
+              <h3 data-key="centenary-walk">Centenary Walk</h3>
+              <p data-key="event-description-1">
+                Celebrating 100 years with students, teachers, and old boys.
+              </p>
+            </div>
+          </div>
+
+          <div class="event-card reveal-up">
+            <img src="assets/news2.jpg" alt="Event" />
+            <div class="event-content">
+              <span>July 2026</span>
+              <h3 data-key="new-building-opening">New Building Opening</h3>
+              <p data-key="event-description-2">
+                Official opening ceremony of the new Mahasen Hall.
+              </p>
+            </div>
+          </div>
+
+          <div class="event-card reveal-up">
+            <img src="assets/news3.jpg" alt="Event" />
+            <div class="event-content">
+              <span>August 2026</span>
+              <h3 data-key="big-match">Big Match</h3>
+              <p data-key="event-description-3">
+                Annual inter-school cricket tournament with exciting
+                performances.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GALLERY ================= -->
+
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section-heading-center reveal-up">
+          <span class="section-tag" data-key="galleryTag">Gallery</span>
+          <h2 class="section-title" data-key="galleryTitle">School Memories</h2>
+        </div>
+
+        <div class="gallery-grid">
+          <img src="assets/news1.jpg" alt="Gallery Image" class="reveal-up" />
+          <img src="assets/news2.jpg" alt="Gallery Image" class="reveal-up" />
+          <img src="assets/news3.jpg" alt="Gallery Image" class="reveal-up" />
+          <img src="assets/news4.jpg" alt="Gallery Image" class="reveal-up" />
+          <img src="assets/news5.jpg" alt="Gallery Image" class="reveal-up" />
+          <img src="assets/news6.jpg" alt="Gallery Image" class="reveal-up" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info reveal-left">
+          <span class="section-tag" data-key="contactTag">Contact Us</span>
+
+          <h2 class="section-title" data-key="contactTitle">Get In Touch</h2>
+
+          <p data-key="contactDescription">
+            We are always happy to connect with students, parents, alumni, and
+            visitors.
+          </p>
+
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span data-key="schoolAddress">Polegoda, Sri Lanka</span>
+          </div>
+
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span data-key="schoolPhone">+94 11 234 5678</span>
+          </div>
+
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span data-key="schoolEmail">info@polegodamv.lk</span>
+          </div>
+        </div>
+
+        <form class="contact-form reveal-right">
+          <input type="text" placeholder="Your Name" />
+          <input type="email" placeholder="Your Email" />
+          <textarea rows="6" placeholder="Your Message"></textarea>
+
+          <button class="btn btn-primary" data-key="sendMessage">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <div>
+          <h3 data-key="school-name">Polegoda Maha Vidyalaya</h3>
+          <p data-key="school-mission">
+            Inspiring generations through knowledge, discipline, and excellence.
+          </p>
+        </div>
+
+        <div class="footer-socials">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom" data-key="copyright">
+        © 2026 Polegoda Maha Vidyalaya. All Rights Reserved.
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
