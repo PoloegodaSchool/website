@@ -1,0 +1,487 @@
+/* ================= MOBILE FIXES ================= */
+
+/* --- Fix overflow / right-side thin line (global) --- */
+html,
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+/* Clip any absolutely positioned element that bleeds out */
+.header,
+.hero,
+.principal-modern,
+.principal-photo-wrapper {
+    overflow: hidden;
+}
+
+/* Keep hero slides clipped */
+.hero-slide {
+    overflow: hidden;
+}
+
+/* photo-bg decorative box — stop it bleeding out */
+.photo-bg {
+    right: 0;
+    bottom: 0;
+}
+
+/* principal-modern decorative circle — stop bleed */
+.principal-modern::before {
+    right: -100px;
+}
+
+/* ===================================================
+   TABLET  (max 992px)
+=================================================== */
+@media (max-width: 992px) {
+
+    /* Nav: hide links, show hamburger */
+    .nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 75%;
+        max-width: 320px;
+        height: 100vh;
+        background: #1a0508;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 100px 30px 40px;
+        gap: 0;
+        transition: left 0.4s ease;
+        z-index: 9998;
+        box-shadow: 4px 0 30px rgba(0,0,0,0.4);
+    }
+
+    .nav.active {
+        left: 0;
+    }
+
+    .nav a {
+        width: 100%;
+        padding: 16px 0;
+        font-size: 1.05rem;
+        border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+
+    /* Show hamburger */
+    .menu-btn {
+        display: flex;
+        z-index: 9999;
+    }
+
+    /* Language switcher stays visible */
+    .language-switcher {
+        display: block;
+    }
+
+    /* Nav container */
+    .nav-container {
+        height: 72px;
+    }
+
+    /* Logo size */
+    .logo img {
+        width: 42px;
+    }
+
+    .logo h2 {
+        font-size: 1rem;
+    }
+
+    .logo span {
+        font-size: 0.72rem;
+    }
+
+    /* Contact wrapper */
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    /* Achievement / gallery */
+    .achievement-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ===================================================
+   MOBILE  (max 768px)
+=================================================== */
+@media (max-width: 768px) {
+
+    /* --- Global overflow guard --- */
+    * {
+        max-width: 100%;
+    }
+
+    .container {
+        width: 92%;
+    }
+
+    /* ---- Navbar ---- */
+    .nav-container {
+        height: 68px;
+    }
+
+    .logo img {
+        width: 38px;
+    }
+
+    .logo h2 {
+        font-size: 0.95rem;
+    }
+
+    .logo span {
+        font-size: 0.68rem;
+    }
+
+    .language-switcher {
+        padding: 6px 9px;
+        font-size: 0.78rem;
+        border-radius: 8px;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
+    .nav {
+        top: 0;
+        padding-top: 90px;
+    }
+
+    /* ---- Hero ---- */
+    .hero {
+        min-height: 100vh;
+    }
+
+    .hero-content {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-top: 90px;
+        padding: 0 22px;
+        text-align: left;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        line-height: 1.15;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .hero-subtitle {
+        font-size: 0.92rem;
+        margin-bottom: 28px;
+        max-width: 100%;
+    }
+
+    .hero-stats {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    .stat-card {
+        width: 100%;
+        padding: 16px 18px;
+        border-radius: 16px;
+    }
+
+    .stat-card h2 {
+        font-size: 2rem;
+    }
+
+    .slider-dots {
+        bottom: 18px;
+    }
+
+    /* ---- About ---- */
+    .about {
+        padding: 70px 0 50px;
+    }
+
+    .about-header {
+        margin-bottom: 55px;
+    }
+
+    .about-header h2 {
+        font-size: 1.7rem;
+    }
+
+    .vision-mission-wrapper {
+        grid-template-columns: 1fr;
+        gap: 55px;
+    }
+
+    .vision-card-premium,
+    .mission-card-premium {
+        padding: 55px 18px 60px;
+    }
+
+    .vision-card-premium blockquote {
+        font-size: 1.2rem;
+        padding: 14px 8px;
+    }
+
+    .mission-card-premium blockquote {
+        font-size: 1rem;
+        padding: 10px 8px;
+    }
+
+    /* ---- Principal ---- */
+    .principal-modern {
+        padding: 70px 0;
+        overflow: visible;
+    }
+
+    .principal-modern-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .principal-text h2 {
+        font-size: 1.9rem;
+    }
+
+    /* Contain the decorative bg box inside its parent */
+    .principal-photo-wrapper {
+        overflow: hidden;
+        border-radius: 40px;
+    }
+
+    .photo-bg {
+        right: 0;
+        bottom: 0;
+        width: 95%;
+        height: 95%;
+    }
+
+    .quote-card {
+        position: relative;
+        left: 0 !important;
+        bottom: 0 !important;
+        width: 100%;
+        margin-top: 15px;
+        padding: 16px;
+    }
+
+    .principal-values {
+        grid-template-columns: 1fr 1fr;
+        margin-top: 50px;
+    }
+
+    .value-item {
+        padding: 22px 12px;
+    }
+
+    /* ---- Staff ---- */
+    .academic-staff {
+        padding: 70px 0;
+    }
+
+    .staff-header {
+        margin-bottom: 40px;
+        padding-bottom: 0;
+    }
+
+    .staff-header h2 {
+        font-size: 1.9rem;
+        padding-bottom: 0;
+        margin-bottom: 10px;
+    }
+
+    .staff-btn {
+        position: static;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 14px;
+        padding: 10px 20px;
+        font-size: 0.88rem;
+    }
+
+    /* ---- History ---- */
+    .history-showcase {
+        padding: 70px 0;
+    }
+
+    .history-slider-wrapper {
+        gap: 8px;
+    }
+
+    .history-nav {
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+    }
+
+    .history-nav i {
+        font-size: 0.95rem;
+    }
+
+    .principal-history-image {
+        height: 220px;
+    }
+
+    .principal-history-content {
+        padding: 18px;
+    }
+
+    .principal-history-content h3 {
+        font-size: 1.15rem;
+    }
+
+    /* ---- Achievements ---- */
+    .achievements {
+        padding: 70px 0;
+    }
+
+    .achievement-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .achievement-card {
+        padding: 25px 15px;
+    }
+
+    .achievement-card i {
+        font-size: 2rem;
+    }
+
+    /* ---- Events ---- */
+    .events {
+        padding: 70px 0;
+    }
+
+    .event-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .event-card img {
+        height: 190px;
+    }
+
+    /* ---- Gallery ---- */
+    .gallery {
+        padding: 70px 0;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .gallery-grid img {
+        height: 150px;
+        border-radius: 14px;
+    }
+
+    /* ---- Contact ---- */
+    .contact-section {
+        padding: 70px 0;
+    }
+
+    .contact-header h2 {
+        font-size: 1.9rem;
+    }
+
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info-card,
+    .contact-form-card {
+        padding: 22px 18px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-map iframe {
+        height: 190px;
+    }
+
+    /* ---- Footer ---- */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    /* ---- Section headings ---- */
+    .section-title {
+        font-size: 1.7rem;
+    }
+
+    .section-heading-center {
+        margin-bottom: 42px;
+    }
+
+    /* ---- Preloader ---- */
+    .loader-content img {
+        width: 105px;
+        height: 105px;
+    }
+
+    .loader-content h2 {
+        font-size: 1.25rem;
+        margin-top: 18px;
+    }
+}
+
+/* ===================================================
+   SMALL PHONES  (max 420px)
+=================================================== */
+@media (max-width: 420px) {
+
+    .hero h1 {
+        font-size: 1.75rem;
+    }
+
+    .achievement-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid img {
+        height: 210px;
+    }
+
+    .principal-values {
+        grid-template-columns: 1fr;
+    }
+
+    .history-nav {
+        display: none;
+    }
+
+    .about-header h2 {
+        font-size: 1.45rem;
+    }
+
+    .hero-content {
+        padding: 0 16px;
+    }
+
+    .language-switcher {
+        font-size: 0.72rem;
+        padding: 5px 7px;
+    }
+
+    .logo h2 {
+        font-size: 0.85rem;
+    }
+}

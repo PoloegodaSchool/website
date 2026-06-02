@@ -2520,7 +2520,7 @@ img {
     }
 }
 
-@media(max-width: 768px) {
+/* @media(max-width: 768px) {
 
     .container{
         width: 92%;
@@ -2647,7 +2647,7 @@ img {
         margin-left: 20px;
         margin-right: 20px;
     } */
-
+/* 
     .vision-mission-wrapper{
 
         grid-template-columns:1fr;
@@ -2717,7 +2717,7 @@ img {
         font-size: 0.95rem;
     }
 
-}
+} */
 
 
 
