@@ -55,6 +55,125 @@ window.addEventListener("scroll", () => {
 
 });
 
+// ================= HERO SLIDESHOW =================
+document.addEventListener('DOMContentLoaded', function() {
+  const slides = document.querySelectorAll('.hero-slide');
+  const dots = document.querySelectorAll('.slider-dot');
+  let currentSlide = 0;
+  let slideInterval;
+
+  // Function to show a specific slide
+  function showSlide(index) {
+    // Remove active class from all slides
+    slides.forEach(slide => {
+      slide.classList.remove('active');
+    });
+    
+    // Remove active class from all dots
+    dots.forEach(dot => {
+      dot.classList.remove('active');
+    });
+    
+    // Add active class to current slide and dot
+    slides[index].classList.add('active');
+    dots[index].classList.add('active');
+    
+    currentSlide = index;
+  }
+
+  // Function to go to next slide
+  function nextSlide() {
+    let newIndex = currentSlide + 1;
+    if (newIndex >= slides.length) {
+      newIndex = 0;
+    }
+    showSlide(newIndex);
+  }
+
+  // Start automatic slideshow (change every 5 seconds)
+  function startSlideshow() {
+    slideInterval = setInterval(nextSlide, 5000);
+  }
+
+  // Stop slideshow
+  function stopSlideshow() {
+    clearInterval(slideInterval);
+  }
+
+  // Add click events to dots
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      stopSlideshow();
+      showSlide(index);
+      startSlideshow();
+    });
+  });
+
+  // Pause slideshow on hover
+  const heroSection = document.querySelector('.hero');
+  heroSection.addEventListener('mouseenter', stopSlideshow);
+  heroSection.addEventListener('mouseleave', startSlideshow);
+
+  // Start the slideshow
+  startSlideshow();
+});
+
+const staffSwiper = new Swiper(".staffSwiper", {
+
+    loop: true,
+
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+
+    speed: 1000,
+
+    spaceBetween: 25,
+
+    slidesPerView: 4,
+
+    breakpoints: {
+
+        0: {
+            slidesPerView: 1,
+        },
+
+        768: {
+            slidesPerView: 2,
+        },
+
+        1024: {
+            slidesPerView: 4,
+        }
+    }
+
+});
+
+const historySwiper = new Swiper(".historySwiper", {
+
+    slidesPerView: 1,
+
+    spaceBetween: 30,
+
+    loop: true,
+
+    navigation: {
+        nextEl: ".history-nav.next",
+        prevEl: ".history-nav.prev",
+    },
+
+    breakpoints: {
+
+        768: {
+            slidesPerView: 2,
+        },
+
+        1200: {
+            slidesPerView: 4,
+        }
+    }
+});
 
 // ================= MOBILE MENU =================
 
@@ -362,4 +481,34 @@ languageSwitcher.addEventListener("change", (e) => {
 
     });
 
+});
+
+document
+.getElementById("contactForm")
+.addEventListener("submit", async function(e){
+
+    e.preventDefault();
+
+    const formData = new FormData(this);
+
+    const response = await fetch("contact.php", {
+
+        method: "POST",
+
+        body: formData
+
+    });
+
+    const result = await response.json();
+
+    if(result.success){
+
+        alert("Message sent successfully.");
+
+        this.reset();
+
+    }else{
+
+        alert("Failed to send message.");
+    }
 });

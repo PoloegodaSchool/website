@@ -14,6 +14,11 @@
 
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
@@ -70,10 +75,22 @@
     <!-- ================= HERO ================= -->
 
     <section class="hero" id="hero">
+      <div
+        class="hero-slide active"
+        style="background-image: url(&quot;assets/new-building.svg&quot;)"
+      ></div>
+      <div
+        class="hero-slide"
+        style="background-image: url(&quot;assets/old-building.svg&quot;)"
+      ></div>
+      <div
+        class="hero-slide"
+        style="background-image: url(&quot;assets/your-third-image.jpg&quot;)"
+      ></div>
       <div class="hero-overlay"></div>
 
       <div class="container hero-content">
-        <p class="hero-top" data-key="welcome">WELCOME TO</p>
+        <!-- <p class="hero-top" data-key="welcome">WELCOME TO</p> -->
 
         <h1 data-key="heroTitle">Polegoda Maha Vidyalaya</h1>
 
@@ -81,10 +98,27 @@
           A Century of Excellence, Leadership & Knowledge
         </p>
 
-        <div class="hero-buttons">
-          <a href="#about" class="btn btn-primary" data-key="exploreBtn">Explore School</a>
-          <a href="#contact" class="btn btn-outline" data-key="contactBtn">Contact Us</a>
-        </div>
+        <!-- <div class="hero-buttons">
+          <a href="#about" class="btn btn-primary">
+            <i class="fa-solid fa-graduation-cap"></i>
+
+            Explore School
+
+            <span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </a>
+
+          <a href="#contact" class="btn btn-outline">
+            <i class="fa-regular fa-envelope"></i>
+
+            Contact Us
+
+            <span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </a>
+        </div> -->
 
         <div class="hero-stats">
           <div class="stat-card glass">
@@ -107,170 +141,586 @@
       <!-- <div class="scroll-down">
         <i class="fa-solid fa-chevron-down"></i>
       </div> -->
+
+      <!-- Slideshow Dots -->
+      <div class="slider-dots">
+        <div class="slider-dot active" data-slide="0"></div>
+        <div class="slider-dot" data-slide="1"></div>
+        <div class="slider-dot" data-slide="2"></div>
+      </div>
     </section>
 
     <!-- ================= ABOUT ================= -->
-
     <section class="section about" id="about">
-      <div class="container about-grid">
-        <div class="about-image reveal-left">
-          <img
-            class="old-building"
-            src="assets/old-building.svg"
-            alt="School Old Building"
-          />
-          <img
-            class="new-building"
-            src="assets/new-building.svg"
-            alt="School New Building"
-          />
+      <div class="container">
+        <div class="about-header">
+          <span class="section-tag"> ABOUT OUR SCHOOL </span>
+
+          <h2>
+            Building Future Leaders
+            <span>Since 1926</span>
+          </h2>
+
+          <p>
+            For nearly a century, Polegoda Maha Vidyalaya has nurtured
+            generations of students through knowledge, discipline, values, and
+            excellence.
+          </p>
         </div>
 
-        <div class="about-content reveal-right">
-          <span class="section-tag" data-key="aboutTag">About Our School</span>
+        <div class="vision-mission-wrapper">
+          <!-- Vision -->
 
-          <h2 class="section-title" data-key="aboutTitle">Building Future Leaders Since 1926</h2>
-
-          <p data-key="school-mission">
-            Polegoda Maha Vidyalaya has proudly served generations of students
-            with dedication, discipline, and academic excellence. Our mission is
-            to nurture students with knowledge, creativity, leadership, and
-            strong moral values.
-          </p>
-
-          <p data-key="school-facilities">
-            With modern education facilities, experienced teachers, and a
-            vibrant student community, we continue to shape future leaders
-            prepared for the modern world.
-          </p>
-
-          <div class="about-features">
-            <div class="feature-card glass">
-              <i class="fa-solid fa-graduation-cap"></i>
-              <h4 data-key="quality-education">Quality Education</h4>
+          <div class="vision-card-premium">
+            <div class="vision-icon">
+              <i class="fa-solid fa-eye"></i>
             </div>
 
-            <div class="feature-card glass">
-              <i class="fa-solid fa-medal"></i>
-              <h4 data-key="achievements">Achievements</h4>
+            <div class="vision-header">
+              <span>OUR VISION</span>
+
+              <h3>Vision</h3>
             </div>
 
-            <div class="feature-card glass">
+            <div class="vision-divider">
+              <span></span>
+
+              <i class="fa-solid fa-leaf"></i>
+
+              <span></span>
+            </div>
+
+            <blockquote>
+              <i class="fa-solid fa-quote-left quote-left"></i>
+
+              A quality child through good management.
+
+              <i class="fa-solid fa-quote-right quote-right"></i>
+            </blockquote>
+
+            <div class="vision-badge">
+              <i class="fa-solid fa-award"></i>
+            </div>
+          </div>
+
+          <!-- Mission -->
+
+          <div class="mission-card-premium">
+            <div class="mission-icon">
+              <i class="fa-solid fa-bullseye"></i>
+            </div>
+
+            <div class="mission-header">
+              <span>OUR MISSION</span>
+
+              <h3>Mission</h3>
+            </div>
+
+            <div class="mission-divider">
+              <span></span>
+
+              <i class="fa-solid fa-leaf"></i>
+
+              <span></span>
+            </div>
+
+            <blockquote>
+              <i class="fa-solid fa-quote-left quote-left"></i>
+
+              It is our mission to raise a noble generation of children who are
+              wise, spiritual, and capable of standing on their own.
+
+              <i class="fa-solid fa-quote-right quote-right"></i>
+            </blockquote>
+
+            <div class="mission-badge">
               <i class="fa-solid fa-users"></i>
-              <h4 data-key="strong-community">Strong Community</h4>
             </div>
           </div>
         </div>
+
+        <!-- <div class="about-features-modern">
+          <div class="feature-modern">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h4>Quality Education</h4>
+          </div>
+
+          <div class="feature-modern">
+            <i class="fa-solid fa-medal"></i>
+            <h4>Achievements</h4>
+          </div>
+
+          <div class="feature-modern">
+            <i class="fa-solid fa-users"></i>
+            <h4>Strong Community</h4>
+          </div>
+
+          <div class="feature-modern">
+            <i class="fa-solid fa-book-open"></i>
+            <h4>Moral Values</h4>
+          </div>
+        </div> -->
       </div>
     </section>
 
     <!-- ================= PRINCIPAL ================= -->
 
-    <section class="section principal-section">
-      <div class="container principal-grid">
-        <div class="principal-content reveal-left">
-          <span class="section-tag" data-key="principalTag">Principal Message</span>
+    <section class="section principal-modern">
+      <div class="container principal-modern-grid">
+        <!-- LEFT CONTENT -->
 
-          <h2 class="section-title" data-key="principalTitle">Message from the Principal</h2>
+        <div class="principal-text">
+          <span class="section-tag"> PRINCIPAL MESSAGE </span>
 
-          <p data-key="principal-message-content">
+          <h2>
+            Message from the
+            <span>Principal</span>
+          </h2>
+
+          <div class="principal-divider">
+            <span></span>
+            <i class="fa-solid fa-school"></i>
+            <span></span>
+          </div>
+
+          <p>
             We are committed to creating a learning environment where every
             student can discover their talents, build confidence, and achieve
             academic excellence.
           </p>
 
-          <p data-key="principal-message-content-2">
+          <p>
             Our school continues to inspire generations through discipline,
             innovation, leadership, and values that prepare students for a
             successful future.
           </p>
 
-          <h4 class="principal-name" data-key="principal-name">Mrs. W.D. Duleeka M. Premathilaka</h4>
+          <div class="principal-signature">
+            <div class="signature-icon">
+              <i class="fa-solid fa-feather"></i>
+            </div>
+
+            <div>
+              <h4>Mrs. W.D. Duleeka M. Premathilaka</h4>
+
+              <span>PRINCIPAL</span>
+            </div>
+          </div>
         </div>
 
-        <div class="principal-image reveal-right">
-          <img src="assets/principal.svg" alt="Principal" />
+        <!-- RIGHT IMAGE -->
+
+        <div class="principal-photo-wrapper">
+          <div class="photo-bg"></div>
+
+          <div class="principal-photo">
+            <img src="assets/principal.svg" alt="Principal" />
+
+            <div class="quote-card">
+              <div class="quote-icon">
+                <i class="fa-solid fa-quote-left"></i>
+              </div>
+
+              <div>
+                <p>
+                  Education is the most powerful weapon which you can use to
+                  change the world.
+                </p>
+
+                <span>– Nelson Mandela</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- VALUES -->
+
+      <div class="container">
+        <div class="principal-values">
+          <div class="value-item">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h4>Student Centred</h4>
+          </div>
+
+          <div class="value-item">
+            <i class="fa-solid fa-shield-heart"></i>
+            <h4>Values & Discipline</h4>
+          </div>
+
+          <div class="value-item">
+            <i class="fa-solid fa-lightbulb"></i>
+            <h4>Innovation & Excellence</h4>
+          </div>
+
+          <div class="value-item">
+            <i class="fa-solid fa-users"></i>
+            <h4>Leadership</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Academic Staff -->
+
+    <section class="section academic-staff">
+      <div class="container">
+        <div class="staff-header">
+          <h2>Our Academic Staff</h2>
+
+          <p>Dedicated educators inspiring minds and shaping futures.</p>
+
+          <a href="#" class="staff-btn">
+            View All Staff
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="swiper staffSwiper">
+          <div class="swiper-wrapper">
+            <!-- Teacher 1 -->
+
+            <div class="swiper-slide">
+              <div class="staff-card">
+                <div class="staff-image">
+                  <img src="assets/teacher1.jpg" alt="Teacher" />
+
+                  <span class="staff-role"> Vice Principal </span>
+                </div>
+
+                <div class="staff-content">
+                  <h3>Mrs. H.K. Sammanmalee</h3>
+
+                  <p>Mathematics</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Teacher 2 -->
+
+            <div class="swiper-slide">
+              <div class="staff-card">
+                <div class="staff-image">
+                  <img src="assets/teacher2.jpg" alt="Teacher" />
+
+                  <span class="staff-role"> Senior Teacher </span>
+                </div>
+
+                <div class="staff-content">
+                  <h3>Mr. R.M. Perera</h3>
+
+                  <p>Science</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Teacher 3 -->
+
+            <div class="swiper-slide">
+              <div class="staff-card">
+                <div class="staff-image">
+                  <img src="assets/teacher3.jpg" alt="Teacher" />
+
+                  <span class="staff-role"> Senior Teacher </span>
+                </div>
+
+                <div class="staff-content">
+                  <h3>Mrs. N.D. Fernando</h3>
+
+                  <p>English Language</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Teacher 4 -->
+
+            <div class="swiper-slide">
+              <div class="staff-card">
+                <div class="staff-image">
+                  <img src="assets/teacher4.jpg" alt="Teacher" />
+
+                  <span class="staff-role"> HOD </span>
+                </div>
+
+                <div class="staff-content">
+                  <h3>Mr. T.D. Jayasinghe</h3>
+
+                  <p>Information Technology</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Teacher 5 -->
+
+            <div class="swiper-slide">
+              <div class="staff-card">
+                <div class="staff-image">
+                  <img src="assets/teacher5.jpg" alt="Teacher" />
+
+                  <span class="staff-role"> Teacher </span>
+                </div>
+
+                <div class="staff-content">
+                  <h3>Teacher Name</h3>
+
+                  <p>Subject</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Teacher 6 -->
+
+            <div class="swiper-slide">
+              <div class="staff-card">
+                <div class="staff-image">
+                  <img src="assets/teacher6.jpg" alt="Teacher" />
+
+                  <span class="staff-role"> Teacher </span>
+                </div>
+
+                <div class="staff-content">
+                  <h3>Teacher Name</h3>
+
+                  <p>Subject</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Add remaining teachers same way -->
+          </div>
+        </div>
+
+        <div class="staff-stats">
+          <div class="stat-item">
+            <i class="fa-solid fa-chalkboard-user"></i>
+            <div>
+              <h3>120+</h3>
+              <p>Academic Staff</p>
+            </div>
+          </div>
+
+          <div class="stat-item">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <div>
+              <h3>15+</h3>
+              <p>Subject Streams</p>
+            </div>
+          </div>
+
+          <div class="stat-item">
+            <i class="fa-solid fa-medal"></i>
+            <div>
+              <h3>25+</h3>
+              <p>Years Excellence</p>
+            </div>
+          </div>
+
+          <div class="stat-item">
+            <i class="fa-solid fa-book-open"></i>
+            <div>
+              <h3>100%</h3>
+              <p>Student Commitment</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ================= HISTORY ================= -->
 
-    <section class="section history" id="history">
+    <section class="history-showcase" id="history">
       <div class="container">
-        <div class="section-heading-center reveal-up">
-          <span class="section-tag" data-key="historyTag">Our History</span>
-          <h2 class="section-title" data-key="historyTitle">A Proud Journey Through Time</h2>
+        <div class="section-heading-center">
+          <span class="section-tag">OUR HISTORY</span>
+
+          <h2 class="section-title">A Legacy of Leadership</h2>
+
+          <p class="history-subtitle">
+            Guided by visionary principals through nearly a century of
+            educational excellence.
+          </p>
         </div>
 
-        <div class="timeline">
-          <div class="timeline-item reveal-up">
-            <div class="timeline-year">1926</div>
-            <div class="timeline-content glass">
-              <h3 data-key="school-founded">School Founded</h3>
-              <p data-key="history-1926">
-                Polegoda Maha Vidyalaya was established with a vision of
-                providing quality education for the local community.
-              </p>
+        <div class="history-slider-wrapper">
+          <button class="history-nav prev">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+
+          <div class="swiper historySwiper">
+            <div class="swiper-wrapper">
+              <!-- Principal 01 -->
+
+              <div class="swiper-slide">
+                <div class="principal-history-card">
+                  <div class="principal-history-image">
+                    <img src="assets/principals/principal1.png" alt="" />
+                  </div>
+
+                  <div class="principal-history-content">
+                    <span class="period"> 1926 - 1948 </span>
+
+                    <h3>Mr. D. S. Perera</h3>
+
+                    <span class="designation"> Founding Principal </span>
+
+                    <p>
+                      Established the school and laid the foundation for quality
+                      education.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Principal 02 -->
+
+              <div class="swiper-slide">
+                <div class="principal-history-card">
+                  <div class="principal-history-image">
+                    <img src="assets/principals/principal2.png" alt="" />
+                  </div>
+
+                  <div class="principal-history-content">
+                    <span class="period"> 1948 - 1972 </span>
+
+                    <h3>Mr. J. B. Fernando</h3>
+
+                    <span class="designation"> Principal </span>
+
+                    <p>
+                      Expanded school facilities and strengthened academic
+                      standards.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Principal 03 -->
+
+              <div class="swiper-slide">
+                <div class="principal-history-card">
+                  <div class="principal-history-image">
+                    <img src="assets/principals/principal3.png" alt="" />
+                  </div>
+
+                  <div class="principal-history-content">
+                    <span class="period"> 1948 - 1972 </span>
+
+                    <h3>Mr. J. B. Fernando</h3>
+
+                    <span class="designation"> Principal </span>
+
+                    <p>
+                      Expanded school facilities and strengthened academic
+                      standards.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Principal 04 -->
+
+              <div class="swiper-slide">
+                <div class="principal-history-card">
+                  <div class="principal-history-image">
+                    <img src="assets/principals/principal4.png" alt="" />
+                  </div>
+
+                  <div class="principal-history-content">
+                    <span class="period"> 1972 - 2000 </span>
+
+                    <h3>Mr. K. A. Silva</h3>
+
+                    <span class="designation"> Principal </span>
+
+                    <p>
+                      Focused on modernizing the curriculum and introducing new
+                      teaching methodologies.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Principal 05 -->
+              <div class="swiper-slide">
+                <div class="principal-history-card">
+                  <div class="principal-history-image">
+                    <img src="assets/principals/principal5.png" alt="" />
+                  </div>
+
+                  <div class="principal-history-content">
+                    <span class="period"> 2000 - 2020 </span>
+
+                    <h3>Mrs. S. M. Jayawardena</h3>
+
+                    <span class="designation"> Principal </span>
+
+                    <p>
+                      Led the school through a period of significant growth and
+                      infrastructure development.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Principal 06 -->
+
+              <div class="swiper-slide">
+                <div class="principal-history-card">
+                  <div class="principal-history-image">
+                    <img src="assets/principals/principal1.png" alt="" />
+                  </div>
+
+                  <div class="principal-history-content">
+                    <span class="period"> 1948 - 1972 </span>
+
+                    <h3>Mr. J. B. Fernando</h3>
+
+                    <span class="designation"> Principal </span>
+
+                    <p>
+                      Expanded school facilities and strengthened academic
+                      standards.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="timeline-item reveal-up">
-            <div class="timeline-year">1975</div>
-            <div class="timeline-content glass">
-              <h3 data-key="expansion-era">Expansion Era</h3>
-              <p data-key="history-1975">
-                New buildings, laboratories, and extracurricular activities were
-                introduced.
-              </p>
-            </div>
-          </div>
-
-          <div class="timeline-item reveal-up">
-            <div class="timeline-year">2005</div>
-            <div class="timeline-content glass">
-              <h3 data-key="technology-integration">Technology Integration</h3>
-              <p data-key="history-2005">
-                Computer education and modern digital learning facilities were
-                introduced.
-              </p>
-            </div>
-          </div>
-
-          <div class="timeline-item reveal-up">
-            <div class="timeline-year">2026</div>
-            <div class="timeline-content glass">
-              <h3 data-key="centenary-celebration">Centenary Celebration</h3>
-              <p data-key="history-2026">
-                Celebrating 100 years of educational excellence and inspiring
-                generations.
-              </p>
-            </div>
-          </div>
+          <button class="history-nav next">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
         </div>
       </div>
     </section>
-
     <!-- ================= ACHIEVEMENTS ================= -->
 
     <section class="section achievements" id="achievements">
       <div class="container">
         <div class="section-heading-center reveal-up">
-          <span class="section-tag" data-key="achievementTag">Achievements</span>
-          <h2 class="section-title" data-key="achievementTitle">Our Success Stories</h2>
+          <span class="section-tag" data-key="achievementTag"
+            >Achievements</span
+          >
+          <h2 class="section-title" data-key="achievementTitle">
+            Our Success Stories
+          </h2>
         </div>
 
         <div class="achievement-grid">
           <div class="achievement-card glass reveal-up">
             <i class="fa-solid fa-trophy"></i>
             <h3 data-key="academic-excellence">Academic Excellence</h3>
-            <p data-key="achievement-1">Outstanding A/L and O/L examination results every year.</p>
+            <p data-key="achievement-1">
+              Outstanding A/L and O/L examination results every year.
+            </p>
           </div>
 
           <div class="achievement-card glass reveal-up">
             <i class="fa-solid fa-futbol"></i>
             <h3 data-key="sports-victories">Sports Victories</h3>
-            <p data-key="achievement-2">Championship wins in cricket, volleyball, and athletics.</p>
+            <p data-key="achievement-2">
+              Championship wins in cricket, volleyball, and athletics.
+            </p>
           </div>
 
           <div class="achievement-card glass reveal-up">
@@ -284,7 +734,9 @@
           <div class="achievement-card glass reveal-up">
             <i class="fa-solid fa-microchip"></i>
             <h3 data-key="innovation">Innovation</h3>
-            <p data-key="achievement-4">Students leading technology and science exhibitions.</p>
+            <p data-key="achievement-4">
+              Students leading technology and science exhibitions.
+            </p>
           </div>
         </div>
       </div>
@@ -296,7 +748,9 @@
       <div class="container">
         <div class="section-heading-center reveal-up">
           <span class="section-tag" data-key="eventTag">Upcoming Events</span>
-          <h2 class="section-title" data-key="eventTitle">Latest School Events</h2>
+          <h2 class="section-title" data-key="eventTitle">
+            Latest School Events
+          </h2>
         </div>
 
         <div class="event-grid">
@@ -359,41 +813,102 @@
 
     <!-- ================= CONTACT ================= -->
 
-    <section class="section contact" id="contact">
-      <div class="container contact-grid">
-        <div class="contact-info reveal-left">
-          <span class="section-tag" data-key="contactTag">Contact Us</span>
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-header">
+          <span class="section-tag">CONTACT US</span>
 
-          <h2 class="section-title" data-key="contactTitle">Get In Touch</h2>
+          <h2>Get In Touch</h2>
 
-          <p data-key="contactDescription">
-            We are always happy to connect with students, parents, alumni, and
-            visitors.
+          <p>
+            We value your inquiries and welcome your feedback. Please do not
+            hesitate to contact us.
           </p>
-
-          <div class="contact-item">
-            <i class="fa-solid fa-location-dot"></i>
-            <span data-key="schoolAddress">Polegoda, Sri Lanka</span>
-          </div>
-
-          <div class="contact-item">
-            <i class="fa-solid fa-phone"></i>
-            <span data-key="schoolPhone">+94 11 234 5678</span>
-          </div>
-
-          <div class="contact-item">
-            <i class="fa-solid fa-envelope"></i>
-            <span data-key="schoolEmail">info@polegodamv.lk</span>
-          </div>
         </div>
 
-        <form class="contact-form reveal-right">
-          <input type="text" placeholder="Your Name" />
-          <input type="email" placeholder="Your Email" />
-          <textarea rows="6" placeholder="Your Message"></textarea>
+        <div class="contact-wrapper">
+          <!-- LEFT -->
 
-          <button class="btn btn-primary" data-key="sendMessage">Send Message</button>
-        </form>
+          <div class="contact-info-card">
+            <div class="info-item">
+              <div class="icon-box">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+
+              <div>
+                <h4>Address</h4>
+
+                <p>
+                  Polegoda Maha Vidyalaya<br />
+                  Polegoda, Sri Lanka
+                </p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="icon-box">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+
+              <div>
+                <h4>Email Us</h4>
+
+                <p>info@polegodamv.lk</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="icon-box">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+
+              <div>
+                <h4>Call Us</h4>
+
+                <p>+94 11 234 5678</p>
+              </div>
+            </div>
+
+            <div class="contact-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.4557535204194!2d80.16255857352601!3d6.590135422388415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3cbbf80b2d27f%3A0x395e9c183e86775e!2sPolegoda%20Maha%20Vidyalaya!5e0!3m2!1sen!2smy!4v1780374641510!5m2!1sen!2smy"
+                allowfullscreen=""
+                loading="lazy"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <!-- RIGHT -->
+
+          <div class="contact-form-card">
+            <form id="contactForm">
+              <div class="form-row">
+                <div class="input-group">
+                  <label>Your Name</label>
+                  <input type="text" name="name" required />
+                </div>
+
+                <div class="input-group">
+                  <label>Your Email</label>
+                  <input type="email" name="email" required />
+                </div>
+              </div>
+
+              <div class="input-group">
+                <label>Subject</label>
+                <input type="text" name="subject" required />
+              </div>
+
+              <div class="input-group">
+                <label>Message</label>
+                <textarea name="message" rows="8" required></textarea>
+              </div>
+
+              <button type="submit" class="contact-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -419,7 +934,7 @@
         © 2026 Polegoda Maha Vidyalaya. All Rights Reserved.
       </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
