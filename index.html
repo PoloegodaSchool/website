@@ -11,7 +11,14 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Cinzel:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Sinhala:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -155,14 +162,18 @@
     <section class="section about" id="about">
       <div class="container">
         <div class="about-header">
-          <span class="section-tag"> ABOUT OUR SCHOOL </span>
+          <span class="section-tag" data-key="sectionTag">
+            ABOUT OUR SCHOOL
+          </span>
 
-          <h2>
-            Building Future Leaders
-            <span>Since 1926</span>
+          <h2 class="section-title">
+            <span data-key="sectionTitle">Building Future Leaders</span>
+            <span class="section-title-highlight" data-key="sectionHighlight">
+              Since 1926
+            </span>
           </h2>
 
-          <p>
+          <p data-key="sectionSubtitle">
             For nearly a century, Polegoda Maha Vidyalaya has nurtured
             generations of students through knowledge, discipline, values, and
             excellence.
@@ -178,9 +189,9 @@
             </div>
 
             <div class="vision-header">
-              <span>OUR VISION</span>
+              <span data-key="visionTag">OUR VISION</span>
 
-              <h3>Vision</h3>
+              <h3 data-key="visionTitle">Vision</h3>
             </div>
 
             <div class="vision-divider">
@@ -191,7 +202,7 @@
               <span></span>
             </div>
 
-            <blockquote>
+            <blockquote data-key="visionQuote">
               <i class="fa-solid fa-quote-left quote-left"></i>
 
               A quality child through good management.
@@ -212,9 +223,9 @@
             </div>
 
             <div class="mission-header">
-              <span>OUR MISSION</span>
+              <span data-key="missionTag">OUR MISSION</span>
 
-              <h3>Mission</h3>
+              <h3 data-key="missionTitle">Mission</h3>
             </div>
 
             <div class="mission-divider">
@@ -225,7 +236,7 @@
               <span></span>
             </div>
 
-            <blockquote>
+            <blockquote data-key="missionQuote">
               <i class="fa-solid fa-quote-left quote-left"></i>
 
               It is our mission to raise a noble generation of children who are
@@ -271,11 +282,20 @@
         <!-- LEFT CONTENT -->
 
         <div class="principal-text">
-          <span class="section-tag"> PRINCIPAL MESSAGE </span>
+          <span class="section-tag" data-key="principalTag">
+            PRINCIPAL MESSAGE
+          </span>
 
-          <h2>
+          <!-- <h2>
             Message from the
-            <span>Principal</span>
+            <span data-key="principalTitle">Principal</span>
+          </h2> -->
+
+          <h2 class="principal-title">
+            <span data-key="principalTitle">Message from the</span>
+            <span class="principal-title-highlight" data-key="principalHighlight">
+              Principal
+            </span>
           </h2>
 
           <div class="principal-divider">
@@ -284,13 +304,13 @@
             <span></span>
           </div>
 
-          <p>
+          <p data-key="principalMessage1">
             We are committed to creating a learning environment where every
             student can discover their talents, build confidence, and achieve
             academic excellence.
           </p>
 
-          <p>
+          <p data-key="principalMessage2">
             Our school continues to inspire generations through discipline,
             innovation, leadership, and values that prepare students for a
             successful future.
@@ -302,9 +322,9 @@
             </div>
 
             <div>
-              <h4>Mrs. W.D. Duleeka M. Premathilaka</h4>
+              <h4 data-key="principalName">Mrs. W.D. Duleeka M. Premathilaka</h4>
 
-              <span>PRINCIPAL</span>
+              <span data-key="principalRole">PRINCIPAL</span>
             </div>
           </div>
         </div>
@@ -323,12 +343,12 @@
               </div>
 
               <div>
-                <p>
+                <p data-key="principalQuote">
                   Education is the most powerful weapon which you can use to
                   change the world.
                 </p>
 
-                <span>– Nelson Mandela</span>
+                <span data-key="principalQuoteAuthor">– Nelson Mandela</span>
               </div>
             </div>
           </div>
@@ -341,22 +361,22 @@
         <div class="principal-values">
           <div class="value-item">
             <i class="fa-solid fa-graduation-cap"></i>
-            <h4>Student Centred</h4>
+            <h4 data-key="principalValues1">Student Centred</h4>
           </div>
 
           <div class="value-item">
             <i class="fa-solid fa-shield-heart"></i>
-            <h4>Values & Discipline</h4>
+            <h4 data-key="principalValues2">Values & Discipline</h4>
           </div>
 
           <div class="value-item">
             <i class="fa-solid fa-lightbulb"></i>
-            <h4>Innovation & Excellence</h4>
+            <h4 data-key="principalValues3">Innovation & Excellence</h4>
           </div>
 
           <div class="value-item">
             <i class="fa-solid fa-users"></i>
-            <h4>Leadership</h4>
+            <h4 data-key="principalValues4">Leadership</h4>
           </div>
         </div>
       </div>

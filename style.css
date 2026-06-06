@@ -614,6 +614,14 @@ img {
     color:#d4af37;
 }
 
+.section-title span[data-key="sectionTitle"] {
+    color: #5a1016;
+}
+
+.section-title-highlight {
+    color: #d4af37;
+}
+
 .about-header p{
 
     color:#555;
@@ -1298,6 +1306,14 @@ img {
     margin:20px 0;
 
     color:#5a1016;
+}
+
+.principal-title span[data-key="principalTitle"] {
+    color: #5a1016;
+}
+
+.principal-title-highlight {
+    color: #d4af37;
 }
 
 .principal-text h2 span{

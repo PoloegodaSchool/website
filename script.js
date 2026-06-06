@@ -56,66 +56,66 @@ window.addEventListener("scroll", () => {
 });
 
 // ================= HERO SLIDESHOW =================
-document.addEventListener('DOMContentLoaded', function() {
-  const slides = document.querySelectorAll('.hero-slide');
-  const dots = document.querySelectorAll('.slider-dot');
-  let currentSlide = 0;
-  let slideInterval;
+document.addEventListener('DOMContentLoaded', function () {
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.slider-dot');
+    let currentSlide = 0;
+    let slideInterval;
 
-  // Function to show a specific slide
-  function showSlide(index) {
-    // Remove active class from all slides
-    slides.forEach(slide => {
-      slide.classList.remove('active');
-    });
-    
-    // Remove active class from all dots
-    dots.forEach(dot => {
-      dot.classList.remove('active');
-    });
-    
-    // Add active class to current slide and dot
-    slides[index].classList.add('active');
-    dots[index].classList.add('active');
-    
-    currentSlide = index;
-  }
+    // Function to show a specific slide
+    function showSlide(index) {
+        // Remove active class from all slides
+        slides.forEach(slide => {
+            slide.classList.remove('active');
+        });
 
-  // Function to go to next slide
-  function nextSlide() {
-    let newIndex = currentSlide + 1;
-    if (newIndex >= slides.length) {
-      newIndex = 0;
+        // Remove active class from all dots
+        dots.forEach(dot => {
+            dot.classList.remove('active');
+        });
+
+        // Add active class to current slide and dot
+        slides[index].classList.add('active');
+        dots[index].classList.add('active');
+
+        currentSlide = index;
     }
-    showSlide(newIndex);
-  }
 
-  // Start automatic slideshow (change every 5 seconds)
-  function startSlideshow() {
-    slideInterval = setInterval(nextSlide, 5000);
-  }
+    // Function to go to next slide
+    function nextSlide() {
+        let newIndex = currentSlide + 1;
+        if (newIndex >= slides.length) {
+            newIndex = 0;
+        }
+        showSlide(newIndex);
+    }
 
-  // Stop slideshow
-  function stopSlideshow() {
-    clearInterval(slideInterval);
-  }
+    // Start automatic slideshow (change every 5 seconds)
+    function startSlideshow() {
+        slideInterval = setInterval(nextSlide, 5000);
+    }
 
-  // Add click events to dots
-  dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-      stopSlideshow();
-      showSlide(index);
-      startSlideshow();
+    // Stop slideshow
+    function stopSlideshow() {
+        clearInterval(slideInterval);
+    }
+
+    // Add click events to dots
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            stopSlideshow();
+            showSlide(index);
+            startSlideshow();
+        });
     });
-  });
 
-  // Pause slideshow on hover
-  const heroSection = document.querySelector('.hero');
-  heroSection.addEventListener('mouseenter', stopSlideshow);
-  heroSection.addEventListener('mouseleave', startSlideshow);
+    // Pause slideshow on hover
+    const heroSection = document.querySelector('.hero');
+    heroSection.addEventListener('mouseenter', stopSlideshow);
+    heroSection.addEventListener('mouseleave', startSlideshow);
 
-  // Start the slideshow
-  startSlideshow();
+    // Start the slideshow
+    startSlideshow();
 });
 
 const staffSwiper = new Swiper(".staffSwiper", {
@@ -292,11 +292,30 @@ const translations = {
         students: "Students",
         teachers: "Teachers",
 
-        aboutTag: "About Our School",
-        aboutTitle: "Building Future Leaders Since 1926",
+        sectionTag: "ABOUT OUR SCHOOL",
+        sectionTitle: "Building Future Leaders",
+        sectionHighlight: "Since 1926",
+        sectionSubtitle : "For nearly a century, Polegoda Maha Vidyalaya has nurtured generations of students through knowledge, discipline, values, and excellence.",
+        visionTag: "OUR VISION",
+        visionTitle: "Vision",
+        visionQuote: "A quality child through good management.",
+        missionTag: "OUR MISSION",
+        missionTitle: "Mission",
+        missionQuote: "It is our mission to raise a noble generation of children who are disciplined, knowledgeable, and socially responsible.",
 
         principalTag: "Principal Message",
-        principalTitle: "Message from the Principal",
+        principalTitle: "Message from the ",
+        principalHighlight: "Principal",
+        principalMessage1 : "We are committed to creating a learning environment where every student can discover their talents, build confidence, and achieve academic excellence.",
+        principalMessage2 : "Our school continues to inspire generations through discipline, innovation, leadership, and values that prepare students for a successful future.",
+        principalName: "Mrs. W.D. Duleeka M. Premathilaka",
+        principalRole: "PRINCIPAL",
+        principalQuote: "Education is the most powerful weapon which you can use to change the world.",
+        principalQuoteAuthor: "– Nelson Mandela",
+        principalValues1: "Student Centred",
+        principalValues2: "Values & Discipline",
+        principalValues3: "Innovation & Excellence",
+        principalValues4: "Leadership",
 
         historyTag: "Our History",
         historyTitle: "A Proud Journey Through Time",
@@ -336,15 +355,34 @@ const translations = {
         exploreBtn: "පාසල බලන්න",
         contactBtn: "අප අමතන්න",
 
-        yearsLegacy: "වසර උරුමය",
+        yearsLegacy: "වසරක උරුමය",
         students: "සිසුන්",
         teachers: "ගුරුවරුන්",
 
-        aboutTag: "අපගේ පාසල",
-        aboutTitle: "1926 සිට අනාගත නායකයින් බිහිකිරීම",
+        sectionTag: "අපගේ පාසල ගැන",
+        sectionTitle: "1926 සිට අනාගත නායකයින්",
+        sectionHighlight: "බිහිකිරීම",
+        sectionSubtitle: "ශතවර්ෂයකට ආසන්න කාලයක් පුරා පොලේගොඩ මහා විද්‍යාලය දැනුම, විනය, සාරධර්ම සහ විශිෂ්ටත්වය තුළින් සිසු පරපුරක් බිහිකර ඇත.",
+        visionTag: "අපගේ දැක්ම",
+        visionTitle: "දැක්ම",
+        visionQuote: "නිවැරදි කළමනාකරණය මගින් ගුණාත්මක ළමයෙක්.",
+        missionTag: "අපගේ මෙහෙවර",
+        missionTitle: "මෙහෙවර",
+        missionQuote: "ප්‍රඥාවන්ත, අධ්‍යාත්මික සහ ස්වාධීනව නැගී සිටීමට හැකියාව ඇති උතුම් දරු පරපුරක් ඇති කිරීම අපගේ මෙහෙවරයි.",
 
-        principalTag: "විදුහල්පති පණිවිඩය",
-        principalTitle: "විදුහල්පති පණිවිඩය",
+        principalTag: "අපගේ විදුහල්පතිතුමිය",
+        principalTitle: "විදුහල්පතිතුමියගේ",
+        principalHighlight: "පණිවිඩය",
+        principalMessage1 : "සෑම සිසුවෙකුටම තම දක්ෂතා සොයා ගැනීමට, විශ්වාසය ගොඩනඟා ගැනීමට සහ අධ්‍යයන විශිෂ්ටත්වය අත්කර ගැනීමට හැකි ඉගෙනුම් පරිසරයක් නිර්මාණය කිරීමට අපි කැපවී සිටිමු.",
+        principalMessage2 : "අපගේ පාසල විනය, නව්‍යකරණය, නායකත්වය සහ සාර්ථක අනාගතයක් සඳහා සිසුන් සූදානම් කරන වටිනාකම් මගින් පරපුරක් ප්‍රේරණය කරමින් ඉදිරියට යයි.",
+        principalName: "ගරු W.D දුලීකා M ප්‍රේමතිලක",
+        principalRole: "විදුහල්පතිතුමිය",
+        principalQuote: "ලෝකය වෙනස් කිරීමට ඔබට භාවිතා කළ හැකි බලවත්ම ආයුධය අධ්‍යාපනයයි.",
+        principalQuoteAuthor: "– නෙල්සන් මැන්ඩෙලා",
+        principalValues1: "ශිෂ්‍ය කේන්ද්‍රීය",
+        principalValues2: "සාරධර්ම සහ විනය",
+        principalValues3: "නවෝත්පාදනය සහ විශිෂ්ටත්වය",
+        principalValues4: "නායකත්වය",
 
         historyTag: "අපගේ ඉතිහාසය",
         historyTitle: "අභිමානවත් ගමන් මග",
@@ -388,8 +426,10 @@ const translations = {
         students: "மாணவர்கள்",
         teachers: "ஆசிரியர்கள்",
 
-        aboutTag: "எங்கள் பள்ளி பற்றி",
-        aboutTitle: "1926 முதல் எதிர்கால தலைவர்களை உருவாக்குகிறோம்",
+        sectionTag: "எங்கள் பள்ளி பற்றி",
+        sectionTitle: "1926 முதல் எதிர்கால தலைவர்களை உருவாக்குகிறோம்",
+        sectionHighlight: "Since 1926",
+        sectionSubtitle : "கிட்டத்தட்ட ஒரு நூற்றாண்டாக பொலேகொட மகா வித்தியாலயம் அறிவு, ஒழுக்கம், மதிப்புகள் மற்றும் சிறப்பின் மூலம் மாணவர் தலைமுறைகளை உருவாக்கி வருகிறது.",
 
         principalTag: "அதிபரின் செய்தி",
         principalTitle: "அதிபரின் செய்தி",
@@ -455,6 +495,16 @@ languageSwitcher.addEventListener("change", (e) => {
     /* NAV FONT SIZE */
 
     const navLinks = document.querySelectorAll(".nav a");
+    const heroTitle = document.querySelector("[data-key='heroTitle']");
+    const visionQuote = document.querySelector("[data-key='visionQuote']");
+    const missionQuote = document.querySelector("[data-key='missionQuote']");
+    const missionTitle = document.querySelector("[data-key='missionTitle']");
+    const visionTitle = document.querySelector("[data-key='visionTitle']");
+    const principalTitle = document.querySelector("[data-key='principalTitle']");
+    const principalHighlight = document.querySelector("[data-key='principalHighlight']");
+    const principalName = document.querySelector("[data-key='principalName']");
+    const principalRole = document.querySelector("[data-key='principalRole']");
+    const principalValues = document.querySelectorAll(".principal-values h4");
 
     navLinks.forEach(link => {
 
@@ -467,13 +517,34 @@ languageSwitcher.addEventListener("change", (e) => {
 
         else if (lang === "si") {
 
-            link.style.fontSize = "0.85rem";
-            link.style.fontWeight = "700";
+            heroTitle.style.fontFamily = "'Noto Serif Sinhala', serif";
+            heroTitle.style.fontSize = "4rem";
+            heroTitle.style.fontWeight = "700";
+            heroTitle.style.lineHeight = "1.3";
+            visionQuote.style.fontFamily = "'Noto Serif Sinhala', serif";
+            missionQuote.style.fontFamily = "'Noto Serif Sinhala', serif";
+            visionTitle.style.fontFamily = "'Noto Serif Sinhala', serif";
+            missionTitle.style.fontFamily = "'Noto Serif Sinhala', serif";
+            principalTitle.style.fontFamily = "'Noto Serif Sinhala', serif";
+            principalTitle.style.fontSize = "2.5rem";
+            principalTitle.style.lineHeight = "1.2";
+            principalHighlight.style.fontSize = "2.5rem";
+            principalHighlight.style.lineHeight = "1.6";
+            principalName.style.fontSize = "1.2rem";
+            principalRole.style.fontSize = "1rem";
+            principalValues.forEach(value => {
+                value.style.fontFamily = "'Noto Serif Sinhala', serif";
+                value.style.fontSize = "1.1rem";
+            });
+            link.style.fontSize = "0.75rem";
+            link.style.fontWeight = "500";
 
         }
 
         else if (lang === "ta") {
-
+            heroTitle.style.fontSize = "4rem";
+            heroTitle.style.fontWeight = "600";
+            heroTitle.style.lineHeight = "1.2";
             link.style.fontSize = "0.82rem";
             link.style.fontWeight = "700";
 
@@ -484,31 +555,31 @@ languageSwitcher.addEventListener("change", (e) => {
 });
 
 document
-.getElementById("contactForm")
-.addEventListener("submit", async function(e){
+    .getElementById("contactForm")
+    .addEventListener("submit", async function (e) {
 
-    e.preventDefault();
+        e.preventDefault();
 
-    const formData = new FormData(this);
+        const formData = new FormData(this);
 
-    const response = await fetch("contact.php", {
+        const response = await fetch("contact.php", {
 
-        method: "POST",
+            method: "POST",
 
-        body: formData
+            body: formData
 
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+
+            alert("Message sent successfully.");
+
+            this.reset();
+
+        } else {
+
+            alert("Failed to send message.");
+        }
     });
-
-    const result = await response.json();
-
-    if(result.success){
-
-        alert("Message sent successfully.");
-
-        this.reset();
-
-    }else{
-
-        alert("Failed to send message.");
-    }
-});
