@@ -175,16 +175,16 @@ const historySwiper = new Swiper(".historySwiper", {
     }
 });
 
-// // ================= MOBILE MENU =================
+// ================= MOBILE MENU =================
 
-// const menuBtn = document.getElementById('menuBtn');
-// const navMenu = document.getElementById('navMenu');
+const menuBtn = document.getElementById('menuBtn');
+const navMenu = document.getElementById('navMenu');
 
-// menuBtn.addEventListener('click', () => {
+menuBtn.addEventListener('click', () => {
 
-//     navMenu.classList.toggle('active');
+    navMenu.classList.toggle('active');
 
-// });
+});
 
 
 // ================= SCROLL ANIMATION =================
@@ -266,25 +266,6 @@ window.addEventListener("load", () => {
 
 });
 
-const menuBtn = document.getElementById("menuBtn");
-const navMenu = document.getElementById("navMenu");
-const navOverlay = document.getElementById("navOverlay");
-
-menuBtn.addEventListener("click", () => {
-
-    navMenu.classList.toggle("active");
-    navOverlay.classList.toggle("active");
-
-    document.body.classList.toggle("menu-open");
-});
-
-navOverlay.addEventListener("click", () => {
-
-    navMenu.classList.remove("active");
-    navOverlay.classList.remove("active");
-
-    document.body.classList.remove("menu-open");
-});
 
 // ================= LANGUAGE SWITCHER =================
 

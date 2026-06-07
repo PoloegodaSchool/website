@@ -2274,6 +2274,9 @@ img {
         #8d1d29
     );
 
+    display: block;
+    margin: 20px auto 0;
+
     color:white;
 
     padding:15px 40px;
