@@ -8,11 +8,16 @@ body {
 }
 
 /* Clip any absolutely positioned element that bleeds out */
-.header,
 .hero,
 .principal-modern,
 .principal-photo-wrapper {
     overflow: hidden;
+
+}
+
+.header {
+    overflow: visible !important;
+    z-index: 99999;
 }
 
 /* Keep hero slides clipped */
@@ -44,14 +49,19 @@ body {
         width: 75%;
         max-width: 320px;
         height: 100vh;
-        background: #1a0508;
+        z-index: 99998;
+        background: rgba(90, 16, 22, 0.7);
+
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+
+        border-right: 1px solid rgba(255,255,255,0.2);
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
         padding: 100px 30px 40px;
         gap: 0;
         transition: left 0.4s ease;
-        z-index: 9998;
         box-shadow: 4px 0 30px rgba(0,0,0,0.4);
     }
 
@@ -154,6 +164,7 @@ body {
     .nav {
         top: 0;
         padding-top: 90px;
+        z-index: 99998;
     }
 
     /* ---- Hero ---- */
