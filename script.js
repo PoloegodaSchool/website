@@ -519,7 +519,7 @@ languageSwitcher.addEventListener("change", (e) => {
         else if (lang === "si") {
 
             heroTitle.style.fontFamily = "'Noto Serif Sinhala', serif";
-            heroTitle.style.fontSize = "4rem";
+            heroTitle.style.fontSize = "3rem";
             heroTitle.style.fontWeight = "700";
             heroTitle.style.lineHeight = "1.3";
             visionQuote.style.fontFamily = "'Noto Serif Sinhala', serif";
