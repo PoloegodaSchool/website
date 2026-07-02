@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Polegoda Maha Vidyalaya</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Cinzel:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Sinhala:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="mobile-fix.css" /> -->
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="header" id="header">
+      <div class="container nav-container">
+        <div class="logo">
+          <img src="assets/logo.svg" alt="School Logo" />
+          <div>
+            <h2>Polegoda MV</h2>
+            <span>Since 1926</span>
+          </div>
+        </div>
+
+        <nav class="nav" id="navMenu">
+          <a href="index.html#" data-key="home">Home</a>
+          <a href="index.html#about" data-key="about">About</a>
+          <a href="index.html#history" data-key="history">History</a>
+          <a href="index.html#achievements" data-key="achievements"
+            >Achievements</a
+          >
+          <a href="index.html#events" data-key="events">Events</a>
+          <a href="index.html#gallery" data-key="gallery">Gallery</a>
+          <a href="index.html#contact" data-key="contact">Contact</a>
+        </nav>
+
+        <select id="languageSwitcher" class="language-switcher">
+          <option value="en">English</option>
+          <option value="si">සිංහල</option>
+          <option value="ta">தமிழ்</option>
+        </select>
+
+        <div class="menu-btn" id="menuBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="hero">
+      <div
+        class="hero-slide active"
+        style="background-image: url(&quot;assets/new-building.svg&quot;)"
+      ></div>
+      <div
+        class="hero-slide"
+        style="background-image: url(&quot;assets/old-building.svg&quot;)"
+      ></div>
+      <div
+        class="hero-slide"
+        style="background-image: url(&quot;assets/your-third-image.jpg&quot;)"
+      ></div>
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <!-- <p class="hero-top" data-key="welcome">WELCOME TO</p> -->
+
+        <h1 data-key="heroTitle">Polegoda Maha Vidyalaya</h1>
+
+        <p class="hero-subtitle" data-key="heroSubtitle">
+          A Century of Excellence, Leadership & Knowledge
+        </p>
+
+        <!-- <div class="hero-buttons">
+          <a href="#about" class="btn btn-primary">
+            <i class="fa-solid fa-graduation-cap"></i>
+
+            Explore School
+
+            <span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </a>
+
+          <a href="#contact" class="btn btn-outline">
+            <i class="fa-regular fa-envelope"></i>
+
+            Contact Us
+
+            <span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </a>
+        </div> -->
+
+        <div class="hero-stats">
+          <div class="stat-card glass">
+            <h2>100+</h2>
+            <p data-key="yearsLegacy">Years Legacy</p>
+          </div>
+
+          <div class="stat-card glass">
+            <h2>2500+</h2>
+            <p data-key="students">Students</p>
+          </div>
+
+          <div class="stat-card glass">
+            <h2>150+</h2>
+            <p data-key="teachers">Teachers</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="scroll-down">
+        <i class="fa-solid fa-chevron-down"></i>
+      </div> -->
+
+      <!-- Slideshow Dots -->
+      <div class="slider-dots">
+        <div class="slider-dot active" data-slide="0"></div>
+        <div class="slider-dot" data-slide="1"></div>
+        <div class="slider-dot" data-slide="2"></div>
+      </div>
+    </section>
+
+    <!-- Staff new -->
+
+    <section class="section staff" id="staff">
+      <div class="container">
+        <div class="section-heading-center reveal-up">
+          <span class="section-tag" data-key="eventTag"
+            >Meet our dedicated educators shaping future generations</span
+          >
+          <h2 class="section-title" data-key="eventTitle">
+            Our Academic Staff
+          </h2>
+        </div>
+
+        <div class="filter-bar">
+          <input id="searchInput" type="text" placeholder="Search staff..." />
+          <select id="gradeFilter">
+            <option value="All Staff">All Staff</option>
+            <option value="Grade 6">Grade 6</option>
+            <option value="Grade 7">Grade 7</option>
+            <option value="Grade 8">Grade 8</option>
+            <option value="Grade 9">Grade 9</option>
+            <option value="Grade 10">Grade 10</option>
+            <option value="Grade 11">Grade 11</option>
+            <option value="Grade 12">Grade 12</option>
+            <option value="Arts">Arts</option>
+            <option value="Commerce">Commerce</option>
+          </select>
+        </div>
+
+        <div class="staff-grid" id="staffGrid"></div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <div>
+          <h3 data-key="school-name">Polegoda Maha Vidyalaya</h3>
+          <p data-key="school-mission">
+            Inspiring generations through knowledge, discipline, and excellence.
+          </p>
+        </div>
+
+        <div class="footer-socials">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom" data-key="copyright">
+        © 2026 Polegoda Maha Vidyalaya. All Rights Reserved.
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

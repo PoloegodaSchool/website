@@ -133,6 +133,10 @@ body {
     .gallery-grid {
         grid-template-columns: 1fr 1fr;
     }
+
+    .staff-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* ===================================================
@@ -477,6 +481,10 @@ body {
         font-size: 1.25rem;
         margin-top: 18px;
     }
+
+    .staff-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* ===================================================
@@ -523,5 +531,9 @@ body {
 
     .logo h2 {
         font-size: 0.85rem;
+    }
+
+    .staff-grid {
+        grid-template-columns: 1fr;
     }
 }

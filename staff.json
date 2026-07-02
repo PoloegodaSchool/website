@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Mr. R.M. Perera",
+    "role": "Senior Teacher",
+    "subject": "Science",
+    "image": "assets/teachers/principal1.png",
+    "grades": ["Grade 12", "Commerce"]
+  },
+  {
+    "name": "Mrs. N.D. Fernando",
+    "role": "Teacher",
+    "subject": "English",
+    "image": "assets/teachers/principal2.png",
+    "grades": ["Grade 10", "Grade 11"]
+  },
+  {
+    "name": "Mr. T.D. Jayasinghe",
+    "role": "HOD",
+    "subject": "IT",
+    "image": "assets/teachers/principal3.png",
+    "grades": ["Grade 12"]
+  },
+  {
+    "name": "Mrs. S.M. Perera",
+    "role": "Teacher",
+    "subject": "Mathematics",
+    "image": "assets/teachers/principal4.png",
+    "grades": ["Grade 9"]
+  },
+  {
+    "name": "Mr. K.P. Silva",
+    "role": "Teacher",
+    "subject": "History",
+    "image": "assets/teachers/principal5.png",
+    "grades": ["Grade 8"]
+  },
+  {
+    "name": "Mrs. A.R. Wijesinghe",
+    "role": "Teacher",
+    "subject": "Geography",
+    "image": "assets/teachers/principal6.png",
+    "grades": ["Grade 7"]
+  },    
+  {
+    "name": "Mr. D.S. Perera",
+    "role": "Teacher",
+    "subject": "Biology",
+    "image": "assets/teachers/principal7.png",
+    "grades": ["Grade 6"]
+  },
+  {
+    "name": "Mrs. L.M. Fernando",
+    "role": "Teacher",
+    "subject": "Chemistry",
+    "image": "assets/teachers/principal8.png",
+    "grades": ["Grade 8", "Grade 9"]
+  },
+  {
+    "name": "Mr. P.R. Jayawardena",
+    "role": "Teacher",
+    "subject": "Physics",
+    "image": "assets/teachers/principal9.png",
+    "grades": ["Grade 7", "Grade 10"]
+  },
+  {
+    "name": "Mrs. H.K. Perera",
+    "role": "Teacher",
+    "subject": "Art",
+    "image": "assets/teachers/principal10.png",
+    "grades": ["Grade 9", "Grade 11"]
+  },
+  {
+    "name": "Mr. S.D. Silva",
+    "role": "Teacher",
+    "subject": "Music",
+    "image": "assets/teachers/principal11.png",
+    "grades": ["Grade 12"]
+  },
+  {
+    "name": "Mrs. R.M. Jayasinghe",
+    "role": "Teacher",
+    "subject": "Physical Education",
+    "image": "assets/teachers/principal12.png",
+    "grades": ["Grade 10", "Grade 11"]
+  }
+]

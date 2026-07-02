@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Academic Staff</title>
+    <link rel="stylesheet" href="staff.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="container nav-container">
+        <div class="logo">
+          <img src="assets/logo.svg" alt="School Logo" />
+          <div>
+            <h2>Polegoda MV</h2>
+            <span>Since 1926</span>
+          </div>
+        </div>
+
+        <nav class="nav" id="navMenu">
+          <a href="#hero" data-key="home">Home</a>
+          <a href="#about" data-key="about">About</a>
+          <a href="#history" data-key="history">History</a>
+          <a href="#achievements" data-key="achievements">Achievements</a>
+          <a href="#events" data-key="events">Events</a>
+          <a href="#gallery" data-key="gallery">Gallery</a>
+          <a href="#contact" data-key="contact">Contact</a>
+        </nav>
+
+        <select id="languageSwitcher" class="language-switcher">
+          <option value="en">English</option>
+          <option value="si">සිංහල</option>
+          <option value="ta">தமிழ்</option>
+        </select>
+
+        <div class="menu-btn" id="menuBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <section class="staff-hero">
+      <h1>Our Academic Staff</h1>
+      <p>Meet our dedicated educators shaping future generations.</p>
+    </section>
+
+    <section class="staff-directory">
+      <div class="container">
+        <div class="filter-bar">
+          <input type="text" placeholder="Search staff..." />
+          <select>
+            <option>All Departments</option>
+            <option>Mathematics</option>
+            <option>Science</option>
+            <option>Languages</option>
+          </select>
+        </div>
+
+        <div class="staff-grid">
+          <div class="staff-card">
+            <img src="assets/teacher1.jpg" />
+            <div class="content">
+              <h3>Mrs. H.K. Sammanmalee</h3>
+              <p>Vice Principal</p>
+              <span>Mathematics</span>
+            </div>
+          </div>
+
+          <div class="staff-card">
+            <img src="assets/teacher2.jpg" />
+            <div class="content">
+              <h3>Mr. R.M. Perera</h3>
+              <p>Senior Teacher</p>
+              <span>Science</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
